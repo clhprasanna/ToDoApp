@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: TodoApp
+  datasource:
+    url: jdbc:sqlite:todoapp.db
+    driver-class-name: org.sqlite.JDBC
+    initialization-mode: always
+  sql:
+    init:
+      schema-locations: 'classpath:schema.sql'
+      mode: always
